@@ -2,9 +2,11 @@ mod builder;
 mod generated;
 mod template;
 
-use crate::builder::{generate, generate_all, save, Builder};
+use crate::builder::{generate, generate_all, get_templates, save, Builder};
 use structopt::StructOpt;
-use tokio::io::Result;
+use texcreate_repo::Repo;
+use tokio::fs::File;
+use tokio::io::{AsyncWriteExt, Result};
 
 #[derive(StructOpt)]
 #[structopt(about = "A template generator for the TexCreate project")]
@@ -25,6 +27,11 @@ enum CLI {
     Save {
         #[structopt(short, long)]
         name: String,
+    },
+    #[structopt(about = "Creates a new repo file given the current templates")]
+    Release {
+        #[structopt(short, long)]
+        version: u64,
     },
 }
 
@@ -49,6 +56,14 @@ async fn main() -> Result<()> {
             generate_all(builder).await?
         }
         CLI::Save { name } => save(&name).await?,
+        CLI::Release { version } => {
+            let templates = get_templates().await;
+            println!("{:?}", &templates);
+            let repo = Repo::new(version, &templates);
+            let mut file = File::create("repo.toml").await?;
+            let content = repo.to_string();
+            file.write_all(content.as_bytes()).await?;
+        }
     }
 
     Ok(())

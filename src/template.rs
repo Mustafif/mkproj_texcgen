@@ -3,9 +3,9 @@ use texcore::template::*;
 use texcore::*;
 
 // Name of the template
-static NAME: &str = "";
+static NAME: &str = "basic";
 // Description of the template
-static DESC: &str = r#""#;
+static DESC: &str = r#"A Basic LaTeX Document"#;
 
 // Used to distribute the name
 pub fn name() -> String {
@@ -14,10 +14,12 @@ pub fn name() -> String {
 
 // where all the template elements will be created
 fn elements() -> Vec<Element<Any>> {
-
+    let pagenumbering = Custom::new(r"\pagenumbering{arabic}", Level::Document);
+    let newpage = Custom::new(r"\newpage", Level::Document);
+    let amsmath = Package::new("amsmath");
     // This macro converts all TexCore types that implement
     // the `Tex` trait to Element<Any>
-    Elements![]
+    Elements![pagenumbering, newpage, amsmath]
 }
 
 // where you may declare the version of the template
@@ -25,7 +27,7 @@ fn version() -> Version {
     let mut version = Version::new();
     // semantic versioning follows M.m.p
     // where M is major, m is minor and p is patch
-    let major = 0;
+    let major = 1;
     let minor = 0;
     let patch = 0;
     // sets the version
@@ -36,7 +38,8 @@ fn version() -> Version {
 // generates the template
 pub fn generate_template() -> Template {
     // sets the metadata defaults of the template
-    let metadata = Metadata::default();
+    let mut metadata = Metadata::default();
+    metadata.maketitle = true;
     // we will create a new template setting the name, description and metadata
     let mut template = Template::new(NAME, DESC, &metadata);
     // sets the template's version

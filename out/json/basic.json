@@ -1,8 +1,8 @@
 {
-  "name": "test",
-  "description": "This is a test template",
+  "name": "basic",
+  "description": "A Basic LaTeX Document",
   "version": {
-    "major": 0,
+    "major": 1,
     "minor": 0,
     "patch": 0
   },
@@ -18,8 +18,36 @@
     "list": [
       {
         "value": {
-          "value": "A Chapter",
-          "type_": "T_Chapter",
+          "value": "\\pagenumbering{arabic}",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "\\newpage",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "amsmath",
+          "type_": "T_Package",
           "level": null,
           "header_level": null,
           "text_type": null,
@@ -27,36 +55,8 @@
           "items": null,
           "elements": null
         },
-        "type_": "T_Chapter",
-        "level": "Document"
-      },
-      {
-        "value": {
-          "value": "A Header",
-          "type_": "T_Header",
-          "level": null,
-          "header_level": 1,
-          "text_type": null,
-          "list_type": null,
-          "items": null,
-          "elements": null
-        },
-        "type_": "T_Header",
-        "level": "Document"
-      },
-      {
-        "value": {
-          "value": "A Sub Header",
-          "type_": "T_Header",
-          "level": null,
-          "header_level": 2,
-          "text_type": null,
-          "list_type": null,
-          "items": null,
-          "elements": null
-        },
-        "type_": "T_Header",
-        "level": "Document"
+        "type_": "T_Package",
+        "level": "Packages"
       }
     ]
   }

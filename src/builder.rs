@@ -1,5 +1,5 @@
-use crate::template::{generate_template, name};
 use crate::generated::*;
+use crate::template::{generate_template, name};
 use std::io::ErrorKind;
 use std::path::PathBuf;
 use texcgen_macro::run_templates;
@@ -80,17 +80,10 @@ impl Builder {
                 let json = template.to_json_string();
                 let tex = template.to_latex_string();
 
-                try_join!(
-                    {
-                        println!("Generating {}", &paths[0].display());
-                        self.build_file(&paths[0], json)
-                    },
-                    {
-                        println!("Generating {}", &paths[1].display());
-                        self.build_file(&paths[1], tex)
-                    }
-                )
-                .unwrap();
+                println!("Generating {}", &paths[0].display());
+                self.build_file(&paths[0], json).await?;
+                println!("Generating {}", &paths[1].display());
+                self.build_file(&paths[1], tex).await?;
             }
             _ => return Err(Error::from(ErrorKind::InvalidData)),
         }
@@ -142,6 +135,10 @@ fn custom_dir() -> Option<PathBuf> {
         None => None,
         Some(p) => Some(p.join(path)),
     }
+}
+
+pub async fn get_templates() -> Vec<Template> {
+    run_templates!()
 }
 
 pub async fn save(name: &str) -> Result<()> {
