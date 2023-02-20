@@ -1,0 +1,203 @@
+{
+  "name": "theatre",
+  "description": "Create your own script for a play",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "element_list": {
+    "metadata": {
+      "author": "author",
+      "date": "date",
+      "title": "title",
+      "fontsize": 11,
+      "doc_class": "article",
+      "maketitle": true
+    },
+    "list": [
+      {
+        "value": {
+          "value": "\\tableofcontents",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "\\newpage",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "\\Character[Description]{Name}{aliasName}",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "\\setlength{\\speakswidth}{\\widthof{\\speaksfont Long Name}}",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "\\addtolength{\\speakswidth}{\\Dlabelsep}",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "\\addtolength{\\speaksindent}{\\speakswidth}",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "\\act[] %[act name]",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "\\scene[]%[scene name]",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": " % To make character speak, use \\<alias>speaks{text}",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "\\usepackage[utf8]{inputenc}\n\\pagestyle{fancy}\n\\fancyhf{}\n\\lhead{\\thetitle}\n\\rhead{\\theauthor}\n\\rfoot{Page \\thepage}",
+          "type_": "T_Custom",
+          "level": "Packages",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Packages"
+      },
+      {
+        "value": {
+          "value": "dramatist",
+          "type_": "T_Package",
+          "level": null,
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Package",
+        "level": "Packages"
+      },
+      {
+        "value": {
+          "value": "calc",
+          "type_": "T_Package",
+          "level": null,
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Package",
+        "level": "Packages"
+      },
+      {
+        "value": {
+          "value": "fancyhdr",
+          "type_": "T_Package",
+          "level": null,
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Package",
+        "level": "Packages"
+      }
+    ]
+  }
+}

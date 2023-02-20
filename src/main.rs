@@ -58,7 +58,7 @@ async fn main() -> Result<()> {
         CLI::Save { name } => save(&name).await?,
         CLI::Release { version } => {
             let templates = get_templates().await;
-            println!("{:?}", &templates);
+            //println!("{:?}", &templates);
             let repo = Repo::new(version, &templates);
             let mut file = File::create("repo.toml").await?;
             let content = repo.to_string();

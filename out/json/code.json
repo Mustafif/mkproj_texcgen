@@ -1,0 +1,148 @@
+{
+  "name": "code",
+  "description": "Code Documentation Focused",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "element_list": {
+    "metadata": {
+      "author": "author",
+      "date": "date",
+      "title": "title",
+      "fontsize": 11,
+      "doc_class": "article",
+      "maketitle": true
+    },
+    "list": [
+      {
+        "value": {
+          "value": "Intro",
+          "type_": "T_Header",
+          "level": null,
+          "header_level": 1,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Header",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "lstlisting",
+          "type_": "T_Environment",
+          "level": null,
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": [
+            {
+              "value": {
+                "value": "#include <stdio.h>\nint main()\n{\n    printf(\"Hello World!\");\n    return 0;\n}\n/*Comments*/\n",
+                "type_": "T_Text",
+                "level": null,
+                "header_level": null,
+                "text_type": "Normal",
+                "list_type": null,
+                "items": null,
+                "elements": null
+              },
+              "type_": "T_Text",
+              "level": "Document"
+            }
+          ]
+        },
+        "type_": "T_Environment",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "% To use external code, use the following command: \\lstinputlisting{file.c}",
+          "type_": "T_Custom",
+          "level": "Document",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Document"
+      },
+      {
+        "value": {
+          "value": "\\definecolor{codegreen}{rgb}{0,0.6,0}\n\\definecolor{codegray}{rgb}{0.5,0.5,0.5}\n\\definecolor{codepurple}{rgb}{0.58,0,0.82}\n\\definecolor{backcolour}{rgb}{0.95,0.95,0.92}\n\\lstdefinestyle{lang_style}{\n    backgroundcolor=\\color{backcolour},\n    commentstyle=\\color{codegreen},\n    keywordstyle=\\color{magenta},\n    numberstyle=\\tiny\\color{codegray},\n    stringstyle=\\color{codepurple},\n    basicstyle=\\ttfamily\\footnotesize,\n    breakatwhitespace=false,\n    breaklines=true,\n    captionpos=b,\n    keepspaces=true,\n    numbers=left,\n    numbersep=5pt,\n    showspaces=false,\n    showstringspaces=false,\n    showtabs=false,\n    tabsize=2\n}\n\\lstset{language=c}\n\\lstset{style=lang_style}\n",
+          "type_": "T_Custom",
+          "level": "Packages",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Custom",
+        "level": "Packages"
+      },
+      {
+        "value": {
+          "value": "graphicx",
+          "type_": "T_Package",
+          "level": null,
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Package",
+        "level": "Packages"
+      },
+      {
+        "value": {
+          "value": "listings",
+          "type_": "T_Package",
+          "level": null,
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Package",
+        "level": "Packages"
+      },
+      {
+        "value": {
+          "value": "xcolor",
+          "type_": "T_Package",
+          "level": null,
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Package",
+        "level": "Packages"
+      },
+      {
+        "value": {
+          "value": "amsmath",
+          "type_": "T_Package",
+          "level": null,
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null
+        },
+        "type_": "T_Package",
+        "level": "Packages"
+      }
+    ]
+  }
+}

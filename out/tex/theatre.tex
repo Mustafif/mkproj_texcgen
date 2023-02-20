@@ -1,0 +1,25 @@
+\documentclass[11pt, letterpaper]{article}
+\title{title}
+\author{author}
+\date{date}
+\usepackage[utf8]{inputenc}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\thetitle}
+\rhead{\theauthor}
+\rfoot{Page \thepage}
+\usepackage{dramatist}
+\usepackage{calc}
+\usepackage{fancyhdr}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\Character[Description]{Name}{aliasName}
+\setlength{\speakswidth}{\widthof{\speaksfont Long Name}}
+\addtolength{\speakswidth}{\Dlabelsep}
+\addtolength{\speaksindent}{\speakswidth}
+\act[] %[act name]
+\scene[]%[scene name]
+ % To make character speak, use \<alias>speaks{text}
+\end{document}
