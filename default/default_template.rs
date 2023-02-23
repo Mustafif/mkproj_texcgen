@@ -14,6 +14,7 @@ pub fn name() -> String {
 
 // where all the template elements will be created
 fn elements() -> Vec<Element<Any>> {
+
     // This macro converts all TexCore types that implement
     // the `Tex` trait to Element<Any>
     Elements![]
