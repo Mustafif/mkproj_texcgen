@@ -1,10 +1,7 @@
-# TexCreate Template Generator 
+# MKProjects TexCreate Template Generator 
 
-> Under the MIT License 
+![Lines of code](https://img.shields.io/tokei/lines/github/MKProj/mkproj_texcgen)
 
-## A Template Generator for the TexCreate Project 
+This repository is used to generate first-party templates for the TexCreate project. 
 
-My goal in this project is to allow users to be able to create their own templates in the same fashion I'll be able 
-to generate and distribute the templates for TexCreate. This project can be cloned and used to generate custom templates for your project. 
-
-## Let's Get Started 
+To get the latest template release, check the `releases` section or visit [texcreate.mkproj.com](https://texcreate.mkproj.com)
