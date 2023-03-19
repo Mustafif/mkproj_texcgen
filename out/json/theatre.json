@@ -20,6 +20,7 @@
       {
         "value": {
           "value": "\\tableofcontents",
+          "latex": "\\tableofcontents",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -29,11 +30,13 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\tableofcontents"
       },
       {
         "value": {
           "value": "\\newpage",
+          "latex": "\\newpage",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -43,11 +46,13 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\newpage"
       },
       {
         "value": {
           "value": "\\Character[Description]{Name}{aliasName}",
+          "latex": "\\Character[Description]{Name}{aliasName}",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -57,11 +62,13 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\Character[Description]{Name}{aliasName}"
       },
       {
         "value": {
           "value": "\\setlength{\\speakswidth}{\\widthof{\\speaksfont Long Name}}",
+          "latex": "\\setlength{\\speakswidth}{\\widthof{\\speaksfont Long Name}}",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -71,11 +78,13 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\setlength{\\speakswidth}{\\widthof{\\speaksfont Long Name}}"
       },
       {
         "value": {
           "value": "\\addtolength{\\speakswidth}{\\Dlabelsep}",
+          "latex": "\\addtolength{\\speakswidth}{\\Dlabelsep}",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -85,11 +94,13 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\addtolength{\\speakswidth}{\\Dlabelsep}"
       },
       {
         "value": {
           "value": "\\addtolength{\\speaksindent}{\\speakswidth}",
+          "latex": "\\addtolength{\\speaksindent}{\\speakswidth}",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -99,11 +110,13 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\addtolength{\\speaksindent}{\\speakswidth}"
       },
       {
         "value": {
           "value": "\\act[] %[act name]",
+          "latex": "\\act[] %[act name]",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -113,11 +126,13 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\act[] %[act name]"
       },
       {
         "value": {
           "value": "\\scene[]%[scene name]",
+          "latex": "\\scene[]%[scene name]",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -127,11 +142,13 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\scene[]%[scene name]"
       },
       {
         "value": {
           "value": " % To make character speak, use \\<alias>speaks{text}",
+          "latex": " % To make character speak, use \\<alias>speaks{text}",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -141,11 +158,13 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": " % To make character speak, use \\<alias>speaks{text}"
       },
       {
         "value": {
           "value": "\\usepackage[utf8]{inputenc}\n\\pagestyle{fancy}\n\\fancyhf{}\n\\lhead{\\thetitle}\n\\rhead{\\theauthor}\n\\rfoot{Page \\thepage}",
+          "latex": "\\usepackage[utf8]{inputenc}\n\\pagestyle{fancy}\n\\fancyhf{}\n\\lhead{\\thetitle}\n\\rhead{\\theauthor}\n\\rfoot{Page \\thepage}",
           "type_": "T_Custom",
           "level": "Packages",
           "header_level": null,
@@ -155,13 +174,15 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Packages"
+        "level": "Packages",
+        "latex": "\\usepackage[utf8]{inputenc}\n\\pagestyle{fancy}\n\\fancyhf{}\n\\lhead{\\thetitle}\n\\rhead{\\theauthor}\n\\rfoot{Page \\thepage}"
       },
       {
         "value": {
           "value": "dramatist",
+          "latex": "\\usepackage{dramatist}",
           "type_": "T_Package",
-          "level": null,
+          "level": "Packages",
           "header_level": null,
           "text_type": null,
           "list_type": null,
@@ -169,13 +190,15 @@
           "elements": null
         },
         "type_": "T_Package",
-        "level": "Packages"
+        "level": "Packages",
+        "latex": "\\usepackage{dramatist}"
       },
       {
         "value": {
           "value": "calc",
+          "latex": "\\usepackage{calc}",
           "type_": "T_Package",
-          "level": null,
+          "level": "Packages",
           "header_level": null,
           "text_type": null,
           "list_type": null,
@@ -183,13 +206,15 @@
           "elements": null
         },
         "type_": "T_Package",
-        "level": "Packages"
+        "level": "Packages",
+        "latex": "\\usepackage{calc}"
       },
       {
         "value": {
           "value": "fancyhdr",
+          "latex": "\\usepackage{fancyhdr}",
           "type_": "T_Package",
-          "level": null,
+          "level": "Packages",
           "header_level": null,
           "text_type": null,
           "list_type": null,
@@ -197,7 +222,8 @@
           "elements": null
         },
         "type_": "T_Package",
-        "level": "Packages"
+        "level": "Packages",
+        "latex": "\\usepackage{fancyhdr}"
       }
     ]
   }

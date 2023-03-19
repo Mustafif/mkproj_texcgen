@@ -7,7 +7,7 @@ use texcore::template::Template;
 use texcore::Tex;
 use tokio::fs::{copy, create_dir, read_to_string, File, OpenOptions};
 use tokio::io::{AsyncWriteExt, Error, Result};
-use tokio::try_join;
+
 
 // The template builder config
 #[derive(Debug, Clone)]

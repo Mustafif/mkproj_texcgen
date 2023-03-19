@@ -20,6 +20,7 @@
       {
         "value": {
           "value": "\\pagenumbering{arabic}",
+          "latex": "\\pagenumbering{arabic}",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -29,11 +30,13 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\pagenumbering{arabic}"
       },
       {
         "value": {
           "value": "\\newpage",
+          "latex": "\\newpage",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -43,13 +46,15 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\newpage"
       },
       {
         "value": {
           "value": "amsmath",
+          "latex": "\\usepackage{amsmath}",
           "type_": "T_Package",
-          "level": null,
+          "level": "Packages",
           "header_level": null,
           "text_type": null,
           "list_type": null,
@@ -57,7 +62,8 @@
           "elements": null
         },
         "type_": "T_Package",
-        "level": "Packages"
+        "level": "Packages",
+        "latex": "\\usepackage{amsmath}"
       }
     ]
   }

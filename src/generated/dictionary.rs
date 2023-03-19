@@ -1,6 +1,6 @@
 // This is where your template will be created.
 use texcore::template::*;
-use texcore::TextType::Normal;
+
 use texcore::*;
 
 // Name of the template

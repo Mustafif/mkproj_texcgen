@@ -20,8 +20,9 @@
       {
         "value": {
           "value": "Intro",
+          "latex": "\\section{Intro}",
           "type_": "T_Header",
-          "level": null,
+          "level": "Document",
           "header_level": 1,
           "text_type": null,
           "list_type": null,
@@ -29,13 +30,15 @@
           "elements": null
         },
         "type_": "T_Header",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\section{Intro}"
       },
       {
         "value": {
           "value": "lstlisting",
+          "latex": "\\begin{lstlisting}\n#include <stdio.h>\nint main()\n{\n    printf(\"Hello World!\");\n    return 0;\n}\n/*Comments*/\n\n\\end{lstlisting}",
           "type_": "T_Environment",
-          "level": null,
+          "level": "Document",
           "header_level": null,
           "text_type": null,
           "list_type": null,
@@ -44,8 +47,9 @@
             {
               "value": {
                 "value": "#include <stdio.h>\nint main()\n{\n    printf(\"Hello World!\");\n    return 0;\n}\n/*Comments*/\n",
+                "latex": "#include <stdio.h>\nint main()\n{\n    printf(\"Hello World!\");\n    return 0;\n}\n/*Comments*/\n",
                 "type_": "T_Text",
-                "level": null,
+                "level": "Document",
                 "header_level": null,
                 "text_type": "Normal",
                 "list_type": null,
@@ -53,16 +57,19 @@
                 "elements": null
               },
               "type_": "T_Text",
-              "level": "Document"
+              "level": "Document",
+              "latex": "#include <stdio.h>\nint main()\n{\n    printf(\"Hello World!\");\n    return 0;\n}\n/*Comments*/\n"
             }
           ]
         },
         "type_": "T_Environment",
-        "level": "Document"
+        "level": "Document",
+        "latex": "\\begin{lstlisting}\n#include <stdio.h>\nint main()\n{\n    printf(\"Hello World!\");\n    return 0;\n}\n/*Comments*/\n\n\\end{lstlisting}"
       },
       {
         "value": {
           "value": "% To use external code, use the following command: \\lstinputlisting{file.c}",
+          "latex": "% To use external code, use the following command: \\lstinputlisting{file.c}",
           "type_": "T_Custom",
           "level": "Document",
           "header_level": null,
@@ -72,11 +79,13 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Document"
+        "level": "Document",
+        "latex": "% To use external code, use the following command: \\lstinputlisting{file.c}"
       },
       {
         "value": {
           "value": "\\definecolor{codegreen}{rgb}{0,0.6,0}\n\\definecolor{codegray}{rgb}{0.5,0.5,0.5}\n\\definecolor{codepurple}{rgb}{0.58,0,0.82}\n\\definecolor{backcolour}{rgb}{0.95,0.95,0.92}\n\\lstdefinestyle{lang_style}{\n    backgroundcolor=\\color{backcolour},\n    commentstyle=\\color{codegreen},\n    keywordstyle=\\color{magenta},\n    numberstyle=\\tiny\\color{codegray},\n    stringstyle=\\color{codepurple},\n    basicstyle=\\ttfamily\\footnotesize,\n    breakatwhitespace=false,\n    breaklines=true,\n    captionpos=b,\n    keepspaces=true,\n    numbers=left,\n    numbersep=5pt,\n    showspaces=false,\n    showstringspaces=false,\n    showtabs=false,\n    tabsize=2\n}\n\\lstset{language=c}\n\\lstset{style=lang_style}\n",
+          "latex": "\\definecolor{codegreen}{rgb}{0,0.6,0}\n\\definecolor{codegray}{rgb}{0.5,0.5,0.5}\n\\definecolor{codepurple}{rgb}{0.58,0,0.82}\n\\definecolor{backcolour}{rgb}{0.95,0.95,0.92}\n\\lstdefinestyle{lang_style}{\n    backgroundcolor=\\color{backcolour},\n    commentstyle=\\color{codegreen},\n    keywordstyle=\\color{magenta},\n    numberstyle=\\tiny\\color{codegray},\n    stringstyle=\\color{codepurple},\n    basicstyle=\\ttfamily\\footnotesize,\n    breakatwhitespace=false,\n    breaklines=true,\n    captionpos=b,\n    keepspaces=true,\n    numbers=left,\n    numbersep=5pt,\n    showspaces=false,\n    showstringspaces=false,\n    showtabs=false,\n    tabsize=2\n}\n\\lstset{language=c}\n\\lstset{style=lang_style}\n",
           "type_": "T_Custom",
           "level": "Packages",
           "header_level": null,
@@ -86,13 +95,15 @@
           "elements": null
         },
         "type_": "T_Custom",
-        "level": "Packages"
+        "level": "Packages",
+        "latex": "\\definecolor{codegreen}{rgb}{0,0.6,0}\n\\definecolor{codegray}{rgb}{0.5,0.5,0.5}\n\\definecolor{codepurple}{rgb}{0.58,0,0.82}\n\\definecolor{backcolour}{rgb}{0.95,0.95,0.92}\n\\lstdefinestyle{lang_style}{\n    backgroundcolor=\\color{backcolour},\n    commentstyle=\\color{codegreen},\n    keywordstyle=\\color{magenta},\n    numberstyle=\\tiny\\color{codegray},\n    stringstyle=\\color{codepurple},\n    basicstyle=\\ttfamily\\footnotesize,\n    breakatwhitespace=false,\n    breaklines=true,\n    captionpos=b,\n    keepspaces=true,\n    numbers=left,\n    numbersep=5pt,\n    showspaces=false,\n    showstringspaces=false,\n    showtabs=false,\n    tabsize=2\n}\n\\lstset{language=c}\n\\lstset{style=lang_style}\n"
       },
       {
         "value": {
           "value": "graphicx",
+          "latex": "\\usepackage{graphicx}",
           "type_": "T_Package",
-          "level": null,
+          "level": "Packages",
           "header_level": null,
           "text_type": null,
           "list_type": null,
@@ -100,13 +111,15 @@
           "elements": null
         },
         "type_": "T_Package",
-        "level": "Packages"
+        "level": "Packages",
+        "latex": "\\usepackage{graphicx}"
       },
       {
         "value": {
           "value": "listings",
+          "latex": "\\usepackage{listings}",
           "type_": "T_Package",
-          "level": null,
+          "level": "Packages",
           "header_level": null,
           "text_type": null,
           "list_type": null,
@@ -114,13 +127,15 @@
           "elements": null
         },
         "type_": "T_Package",
-        "level": "Packages"
+        "level": "Packages",
+        "latex": "\\usepackage{listings}"
       },
       {
         "value": {
           "value": "xcolor",
+          "latex": "\\usepackage{xcolor}",
           "type_": "T_Package",
-          "level": null,
+          "level": "Packages",
           "header_level": null,
           "text_type": null,
           "list_type": null,
@@ -128,13 +143,15 @@
           "elements": null
         },
         "type_": "T_Package",
-        "level": "Packages"
+        "level": "Packages",
+        "latex": "\\usepackage{xcolor}"
       },
       {
         "value": {
           "value": "amsmath",
+          "latex": "\\usepackage{amsmath}",
           "type_": "T_Package",
-          "level": null,
+          "level": "Packages",
           "header_level": null,
           "text_type": null,
           "list_type": null,
@@ -142,7 +159,8 @@
           "elements": null
         },
         "type_": "T_Package",
-        "level": "Packages"
+        "level": "Packages",
+        "latex": "\\usepackage{amsmath}"
       }
     ]
   }
