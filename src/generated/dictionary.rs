@@ -152,7 +152,7 @@ fn elements() -> Vec<Element<Any>> {
 
 // where you may declare the version of the template
 fn version() -> Version {
-    let mut version = Version::new();
+    let mut version = Version::default();
     // semantic versioning follows M.m.p
     // where M is major, m is minor and p is patch
     let major = 1;
@@ -164,7 +164,7 @@ fn version() -> Version {
 }
 
 // generates the template
-pub fn generate_template() -> Template {
+pub async fn generate_template() -> Template {
     // sets the metadata defaults of the template
     let mut metadata = Metadata::default();
     metadata.maketitle = true;
@@ -173,6 +173,6 @@ pub fn generate_template() -> Template {
     // sets the template's version
     template.version = version();
     // push the elements into the template
-    template.push_element_array(elements());
+    template.push_element_array(elements()).await;
     template
 }

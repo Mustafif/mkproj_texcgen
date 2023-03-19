@@ -112,7 +112,7 @@ pub async fn generate(builder: Builder) -> Result<()> {
     let mod_ = format!("pub mod {};\n", name());
     gen_rs.write_all(mod_.as_bytes()).await?;
     // creates the template
-    let template = generate_template();
+    let template = generate_template().await;
     // need to consider Builder
     builder.build(&template).await?;
     // reset template.rs

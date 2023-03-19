@@ -1,4 +1,5 @@
 mod builder;
+#[allow(dead_code)]
 mod generated;
 mod template;
 
