@@ -27,11 +27,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": "\\pagenumbering{arabic}"
+        "latex": "\\pagenumbering{arabic}",
+        "modified": false
       },
       {
         "value": {
@@ -43,11 +45,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": "\\newpage"
+        "latex": "\\newpage",
+        "modified": false
       },
       {
         "value": {
@@ -59,11 +63,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Package",
         "level": "Packages",
-        "latex": "\\usepackage{amsmath}"
+        "latex": "\\usepackage{amsmath}",
+        "modified": false
       }
     ]
   }

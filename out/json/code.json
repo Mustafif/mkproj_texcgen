@@ -27,11 +27,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Header",
         "level": "Document",
-        "latex": "\\section{Intro}"
+        "latex": "\\section{Intro}",
+        "modified": false
       },
       {
         "value": {
@@ -54,17 +56,21 @@
                 "text_type": "Normal",
                 "list_type": null,
                 "items": null,
-                "elements": null
+                "elements": null,
+                "modified": false
               },
               "type_": "T_Text",
               "level": "Document",
-              "latex": "#include <stdio.h>\nint main()\n{\n    printf(\"Hello World!\");\n    return 0;\n}\n/*Comments*/\n"
+              "latex": "#include <stdio.h>\nint main()\n{\n    printf(\"Hello World!\");\n    return 0;\n}\n/*Comments*/\n",
+              "modified": false
             }
-          ]
+          ],
+          "modified": false
         },
         "type_": "T_Environment",
         "level": "Document",
-        "latex": "\\begin{lstlisting}\n#include <stdio.h>\nint main()\n{\n    printf(\"Hello World!\");\n    return 0;\n}\n/*Comments*/\n\n\\end{lstlisting}"
+        "latex": "\\begin{lstlisting}\n#include <stdio.h>\nint main()\n{\n    printf(\"Hello World!\");\n    return 0;\n}\n/*Comments*/\n\n\\end{lstlisting}",
+        "modified": false
       },
       {
         "value": {
@@ -76,27 +82,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": "% To use external code, use the following command: \\lstinputlisting{file.c}"
-      },
-      {
-        "value": {
-          "value": "\\definecolor{codegreen}{rgb}{0,0.6,0}\n\\definecolor{codegray}{rgb}{0.5,0.5,0.5}\n\\definecolor{codepurple}{rgb}{0.58,0,0.82}\n\\definecolor{backcolour}{rgb}{0.95,0.95,0.92}\n\\lstdefinestyle{lang_style}{\n    backgroundcolor=\\color{backcolour},\n    commentstyle=\\color{codegreen},\n    keywordstyle=\\color{magenta},\n    numberstyle=\\tiny\\color{codegray},\n    stringstyle=\\color{codepurple},\n    basicstyle=\\ttfamily\\footnotesize,\n    breakatwhitespace=false,\n    breaklines=true,\n    captionpos=b,\n    keepspaces=true,\n    numbers=left,\n    numbersep=5pt,\n    showspaces=false,\n    showstringspaces=false,\n    showtabs=false,\n    tabsize=2\n}\n\\lstset{language=c}\n\\lstset{style=lang_style}\n",
-          "latex": "\\definecolor{codegreen}{rgb}{0,0.6,0}\n\\definecolor{codegray}{rgb}{0.5,0.5,0.5}\n\\definecolor{codepurple}{rgb}{0.58,0,0.82}\n\\definecolor{backcolour}{rgb}{0.95,0.95,0.92}\n\\lstdefinestyle{lang_style}{\n    backgroundcolor=\\color{backcolour},\n    commentstyle=\\color{codegreen},\n    keywordstyle=\\color{magenta},\n    numberstyle=\\tiny\\color{codegray},\n    stringstyle=\\color{codepurple},\n    basicstyle=\\ttfamily\\footnotesize,\n    breakatwhitespace=false,\n    breaklines=true,\n    captionpos=b,\n    keepspaces=true,\n    numbers=left,\n    numbersep=5pt,\n    showspaces=false,\n    showstringspaces=false,\n    showtabs=false,\n    tabsize=2\n}\n\\lstset{language=c}\n\\lstset{style=lang_style}\n",
-          "type_": "T_Custom",
-          "level": "Packages",
-          "header_level": null,
-          "text_type": null,
-          "list_type": null,
-          "items": null,
-          "elements": null
-        },
-        "type_": "T_Custom",
-        "level": "Packages",
-        "latex": "\\definecolor{codegreen}{rgb}{0,0.6,0}\n\\definecolor{codegray}{rgb}{0.5,0.5,0.5}\n\\definecolor{codepurple}{rgb}{0.58,0,0.82}\n\\definecolor{backcolour}{rgb}{0.95,0.95,0.92}\n\\lstdefinestyle{lang_style}{\n    backgroundcolor=\\color{backcolour},\n    commentstyle=\\color{codegreen},\n    keywordstyle=\\color{magenta},\n    numberstyle=\\tiny\\color{codegray},\n    stringstyle=\\color{codepurple},\n    basicstyle=\\ttfamily\\footnotesize,\n    breakatwhitespace=false,\n    breaklines=true,\n    captionpos=b,\n    keepspaces=true,\n    numbers=left,\n    numbersep=5pt,\n    showspaces=false,\n    showstringspaces=false,\n    showtabs=false,\n    tabsize=2\n}\n\\lstset{language=c}\n\\lstset{style=lang_style}\n"
+        "latex": "% To use external code, use the following command: \\lstinputlisting{file.c}",
+        "modified": false
       },
       {
         "value": {
@@ -108,11 +100,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Package",
         "level": "Packages",
-        "latex": "\\usepackage{graphicx}"
+        "latex": "\\usepackage{graphicx}",
+        "modified": false
       },
       {
         "value": {
@@ -124,11 +118,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Package",
         "level": "Packages",
-        "latex": "\\usepackage{listings}"
+        "latex": "\\usepackage{listings}",
+        "modified": false
       },
       {
         "value": {
@@ -140,11 +136,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Package",
         "level": "Packages",
-        "latex": "\\usepackage{xcolor}"
+        "latex": "\\usepackage{xcolor}",
+        "modified": false
       },
       {
         "value": {
@@ -156,11 +154,139 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Package",
         "level": "Packages",
-        "latex": "\\usepackage{amsmath}"
+        "latex": "\\usepackage{amsmath}",
+        "modified": false
+      },
+      {
+        "value": {
+          "value": "\\definecolor{codegreen}{rbg}{0,0.6, 0}",
+          "latex": "\\definecolor{codegreen}{rbg}{0,0.6, 0}",
+          "type_": "T_Custom",
+          "level": "Packages",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null,
+          "modified": true
+        },
+        "type_": "T_Custom",
+        "level": "Packages",
+        "latex": "\\definecolor{codegreen}{rbg}{0,0.6, 0}",
+        "modified": true
+      },
+      {
+        "value": {
+          "value": "\\definecolor{codegray}{rbg}{0.5,0.5, 0.5}",
+          "latex": "\\definecolor{codegray}{rbg}{0.5,0.5, 0.5}",
+          "type_": "T_Custom",
+          "level": "Packages",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null,
+          "modified": true
+        },
+        "type_": "T_Custom",
+        "level": "Packages",
+        "latex": "\\definecolor{codegray}{rbg}{0.5,0.5, 0.5}",
+        "modified": true
+      },
+      {
+        "value": {
+          "value": "\\definecolor{codepurple}{rbg}{0.58,0, 0.82}",
+          "latex": "\\definecolor{codepurple}{rbg}{0.58,0, 0.82}",
+          "type_": "T_Custom",
+          "level": "Packages",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null,
+          "modified": true
+        },
+        "type_": "T_Custom",
+        "level": "Packages",
+        "latex": "\\definecolor{codepurple}{rbg}{0.58,0, 0.82}",
+        "modified": true
+      },
+      {
+        "value": {
+          "value": "\\definecolor{backcolour}{rbg}{0.95,0.95, 0.92}",
+          "latex": "\\definecolor{backcolour}{rbg}{0.95,0.95, 0.92}",
+          "type_": "T_Custom",
+          "level": "Packages",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null,
+          "modified": true
+        },
+        "type_": "T_Custom",
+        "level": "Packages",
+        "latex": "\\definecolor{backcolour}{rbg}{0.95,0.95, 0.92}",
+        "modified": true
+      },
+      {
+        "value": {
+          "value": "\n\\lstdefinestyle{lang_style}{\n    backgroundcolor=\\color{backcolour},\n    commentstyle=\\color{codegreen},\n    keywordstyle=\\color{magenta},\n    numberstyle=\\tiny\\color{codegray},\n    stringstyle=\\color{codepurple},\n    basicstyle=\\ttfamily\\footnotesize,\n    breakatwhitespace=false,\n    breaklines=true,\n    captionpos=b,\n    keepspaces=true,\n    numbers=left,\n    numbersep=5pt,\n    showspaces=false,\n    showstringspaces=false,\n    showtabs=false,\n    tabsize=2\n}\n",
+          "latex": "\n\\lstdefinestyle{lang_style}{\n    backgroundcolor=\\color{backcolour},\n    commentstyle=\\color{codegreen},\n    keywordstyle=\\color{magenta},\n    numberstyle=\\tiny\\color{codegray},\n    stringstyle=\\color{codepurple},\n    basicstyle=\\ttfamily\\footnotesize,\n    breakatwhitespace=false,\n    breaklines=true,\n    captionpos=b,\n    keepspaces=true,\n    numbers=left,\n    numbersep=5pt,\n    showspaces=false,\n    showstringspaces=false,\n    showtabs=false,\n    tabsize=2\n}\n",
+          "type_": "T_Custom",
+          "level": "Packages",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null,
+          "modified": false
+        },
+        "type_": "T_Custom",
+        "level": "Packages",
+        "latex": "\n\\lstdefinestyle{lang_style}{\n    backgroundcolor=\\color{backcolour},\n    commentstyle=\\color{codegreen},\n    keywordstyle=\\color{magenta},\n    numberstyle=\\tiny\\color{codegray},\n    stringstyle=\\color{codepurple},\n    basicstyle=\\ttfamily\\footnotesize,\n    breakatwhitespace=false,\n    breaklines=true,\n    captionpos=b,\n    keepspaces=true,\n    numbers=left,\n    numbersep=5pt,\n    showspaces=false,\n    showstringspaces=false,\n    showtabs=false,\n    tabsize=2\n}\n",
+        "modified": false
+      },
+      {
+        "value": {
+          "value": "\\lst{language=c}",
+          "latex": "\\lst{language=c}",
+          "type_": "T_Custom",
+          "level": "Packages",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null,
+          "modified": false
+        },
+        "type_": "T_Custom",
+        "level": "Packages",
+        "latex": "\\lst{language=c}",
+        "modified": false
+      },
+      {
+        "value": {
+          "value": "\\lstset{style=lang_stle}",
+          "latex": "\\lstset{style=lang_stle}",
+          "type_": "T_Custom",
+          "level": "Packages",
+          "header_level": null,
+          "text_type": null,
+          "list_type": null,
+          "items": null,
+          "elements": null,
+          "modified": false
+        },
+        "type_": "T_Custom",
+        "level": "Packages",
+        "latex": "\\lstset{style=lang_stle}",
+        "modified": false
       }
     ]
   }

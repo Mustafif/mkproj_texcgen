@@ -4,7 +4,9 @@ mod generated;
 mod template;
 
 use crate::builder::{generate, generate_all, get_templates, save, Builder};
+use std::path::PathBuf;
 use structopt::StructOpt;
+use texcreate_repo::release::Release;
 use texcreate_repo::Repo;
 use tokio::fs::File;
 use tokio::io::{AsyncWriteExt, Result};
@@ -64,6 +66,10 @@ async fn main() -> Result<()> {
             let mut file = File::create("repo.toml").await?;
             let content = repo.to_string();
             file.write_all(content.as_bytes()).await?;
+            let release = Release::new(PathBuf::from("release.toml")).await?;
+            release
+                .build_release(PathBuf::from("release_notes"))
+                .await?;
         }
     }
 

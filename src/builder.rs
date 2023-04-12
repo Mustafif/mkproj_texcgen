@@ -8,7 +8,6 @@ use texcore::Tex;
 use tokio::fs::{copy, create_dir, read_to_string, File, OpenOptions};
 use tokio::io::{AsyncWriteExt, Error, Result};
 
-
 // The template builder config
 #[derive(Debug, Clone)]
 pub struct Builder {

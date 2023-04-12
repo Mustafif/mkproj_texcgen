@@ -1,10 +1,10 @@
-current_vers = 2
+current_vers = 3
 num = 6
 
 [info]
-lachaise = "A perfect way to write assignments"
 theatre = "Create your own script for a play"
-basic = "A Basic LaTeX Document"
+lachaise = "A perfect way to write assignments"
 dictionary = "Create your own dictionary!"
-news = "Write your own newspaper article"
+basic = "A Basic LaTeX Document"
 code = "Code Documentation Focused"
+news = "Write your own newspaper article"

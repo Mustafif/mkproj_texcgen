@@ -1,0 +1,4 @@
+min_texc = "3.1.0"
+texc_vers = "0.7.1  "
+description = "A refresh of Version 1 templates using TexCore 0.7.1, recommended to update using `texcreate upgrade`."
+repo = "repo.toml"

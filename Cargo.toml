@@ -6,10 +6,11 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-dirs = "4.0.0"
+dirs = "5.0.0"
 structopt = "0.3.26"
 texcgen-macro = {path = "texcgen-macro"}
 tokio = { version = "1.25.0", features = ["full"] }
-texcore = {version = "0.6.0", features = ["full"]}
-tectonic = "0.12.0"
-texcreate_repo = "0.1.2"
+texcore = {version = "0.7.1", features = ["full"]}
+texcore_traits = "0.1.0"
+texcreate_repo = {version = "0.2", features = ["release"]}
+

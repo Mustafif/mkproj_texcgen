@@ -2,6 +2,8 @@
 use texcore::template::*;
 use texcore::TextType::Normal;
 use texcore::*;
+use texcore_traits::Options::Curly;
+use texcore_traits::{ExtraOptions, Options};
 
 // Name of the template
 static NAME: &str = "code";
@@ -17,10 +19,40 @@ int main()
 /*Comments*/
 "#;
 
-const PKGEXTRA: &str = r#"\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+fn packages() -> Vec<Element<Any>> {
+    // we will be defining multiple colours
+    fn define_color(c: &str) -> Custom {
+        let s = format!(r"\definecolor{{{c}}}");
+        Custom::new(&s, Level::Packages)
+    }
+    // used to define the extra color options
+    fn rgb_option(r: f64, g: f64, b: f64) -> Vec<Options> {
+        let rgb_option = Curly("rbg".to_string());
+        let color = Curly(format!("{r},{g}, {b}"));
+        vec![rgb_option, color]
+    }
+
+    let mut green = define_color("codegreen");
+    green.modify_element(rgb_option(0.0, 0.6, 0.0));
+
+    let mut gray = define_color("codegray");
+    gray.modify_element(rgb_option(0.5, 0.5, 0.5));
+
+    let mut purple = define_color("codepurple");
+    purple.modify_element(rgb_option(0.58, 0.0, 0.82));
+
+    let mut backcolour = define_color("backcolour");
+    backcolour.modify_element(rgb_option(0.95, 0.95, 0.92));
+
+    let style = Custom::new(STYLE, Level::Packages);
+
+    let lang_set = Custom::new(r"\lst{language=c}", Level::Packages);
+    let style_set = Custom::new(r"\lstset{style=lang_stle}", Level::Packages);
+
+    Elements![green, gray, purple, backcolour, style, lang_set, style_set]
+}
+
+const STYLE: &str = r#"
 \lstdefinestyle{lang_style}{
     backgroundcolor=\color{backcolour},
     commentstyle=\color{codegreen},
@@ -39,8 +71,6 @@ const PKGEXTRA: &str = r#"\definecolor{codegreen}{rgb}{0,0.6,0}
     showtabs=false,
     tabsize=2
 }
-\lstset{language=c}
-\lstset{style=lang_style}
 "#;
 
 // Used to distribute the name
@@ -57,14 +87,12 @@ fn elements() -> Vec<Element<Any>> {
         r#"% To use external code, use the following command: \lstinputlisting{file.c}"#,
         Level::Document,
     );
-    let pkgextra = Custom::new(PKGEXTRA, Level::Packages);
     // This macro converts all TexCore types that implement
     // the `Tex` trait to Element<Any>
     Elements![
         intro,
         example,
         comment,
-        pkgextra,
         Package::new("graphicx"),
         Package::new("listings"),
         Package::new("xcolor"),
@@ -96,5 +124,7 @@ pub async fn generate_template() -> Template {
     template.version = version();
     // push the elements into the template
     template.push_element_array(elements()).await;
+    // push the extra packages into template
+    template.push_element_array(packages()).await;
     template
 }

@@ -27,11 +27,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": "\\tableofcontents"
+        "latex": "\\tableofcontents",
+        "modified": false
       },
       {
         "value": {
@@ -43,11 +45,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": "\\newpage"
+        "latex": "\\newpage",
+        "modified": false
       },
       {
         "value": {
@@ -59,11 +63,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": "\\Character[Description]{Name}{aliasName}"
+        "latex": "\\Character[Description]{Name}{aliasName}",
+        "modified": false
       },
       {
         "value": {
@@ -75,11 +81,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": "\\setlength{\\speakswidth}{\\widthof{\\speaksfont Long Name}}"
+        "latex": "\\setlength{\\speakswidth}{\\widthof{\\speaksfont Long Name}}",
+        "modified": false
       },
       {
         "value": {
@@ -91,11 +99,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": "\\addtolength{\\speakswidth}{\\Dlabelsep}"
+        "latex": "\\addtolength{\\speakswidth}{\\Dlabelsep}",
+        "modified": false
       },
       {
         "value": {
@@ -107,11 +117,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": "\\addtolength{\\speaksindent}{\\speakswidth}"
+        "latex": "\\addtolength{\\speaksindent}{\\speakswidth}",
+        "modified": false
       },
       {
         "value": {
@@ -123,11 +135,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": "\\act[] %[act name]"
+        "latex": "\\act[] %[act name]",
+        "modified": false
       },
       {
         "value": {
@@ -139,11 +153,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": "\\scene[]%[scene name]"
+        "latex": "\\scene[]%[scene name]",
+        "modified": false
       },
       {
         "value": {
@@ -155,11 +171,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Document",
-        "latex": " % To make character speak, use \\<alias>speaks{text}"
+        "latex": " % To make character speak, use \\<alias>speaks{text}",
+        "modified": false
       },
       {
         "value": {
@@ -171,11 +189,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Custom",
         "level": "Packages",
-        "latex": "\\usepackage[utf8]{inputenc}\n\\pagestyle{fancy}\n\\fancyhf{}\n\\lhead{\\thetitle}\n\\rhead{\\theauthor}\n\\rfoot{Page \\thepage}"
+        "latex": "\\usepackage[utf8]{inputenc}\n\\pagestyle{fancy}\n\\fancyhf{}\n\\lhead{\\thetitle}\n\\rhead{\\theauthor}\n\\rfoot{Page \\thepage}",
+        "modified": false
       },
       {
         "value": {
@@ -187,11 +207,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Package",
         "level": "Packages",
-        "latex": "\\usepackage{dramatist}"
+        "latex": "\\usepackage{dramatist}",
+        "modified": false
       },
       {
         "value": {
@@ -203,11 +225,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Package",
         "level": "Packages",
-        "latex": "\\usepackage{calc}"
+        "latex": "\\usepackage{calc}",
+        "modified": false
       },
       {
         "value": {
@@ -219,11 +243,13 @@
           "text_type": null,
           "list_type": null,
           "items": null,
-          "elements": null
+          "elements": null,
+          "modified": false
         },
         "type_": "T_Package",
         "level": "Packages",
-        "latex": "\\usepackage{fancyhdr}"
+        "latex": "\\usepackage{fancyhdr}",
+        "modified": false
       }
     ]
   }

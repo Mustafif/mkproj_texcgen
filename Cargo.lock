@@ -505,7 +505,16 @@ version = "4.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ca3aa72a6f96ea37bbc5aa912f6788242832f75369bdfdadcb0e38423f100059"
 dependencies = [
- "dirs-sys",
+ "dirs-sys 0.3.7",
+]
+
+[[package]]
+name = "dirs"
+version = "5.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dece029acd3353e3a58ac2e3eb3c8d6c35827a892edc6cc4138ef9c33df46ecd"
+dependencies = [
+ "dirs-sys 0.4.0",
 ]
 
 [[package]]
@@ -517,6 +526,17 @@ dependencies = [
  "libc",
  "redox_users",
  "winapi 0.3.9",
+]
+
+[[package]]
+name = "dirs-sys"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "04414300db88f70d74c5ff54e50f9e1d1737d9a5b90f53fcf2e95ca2a9ab554b"
+dependencies = [
+ "libc",
+ "redox_users",
+ "windows-sys 0.45.0",
 ]
 
 [[package]]
@@ -2482,7 +2502,7 @@ version = "0.7.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "da31aef70da0f6352dbcb462683eb4dd2bfad01cf3fc96cf204547b9a839a585"
 dependencies = [
- "dirs",
+ "dirs 4.0.0",
  "fnv",
  "nom",
  "phf 0.11.1",
@@ -2493,11 +2513,11 @@ dependencies = [
 name = "texcgen"
 version = "0.1.0"
 dependencies = [
- "dirs",
+ "dirs 5.0.0",
  "structopt",
- "tectonic",
  "texcgen-macro",
- "texcore 0.6.0",
+ "texcore 0.7.1",
+ "texcore_traits",
  "texcreate_repo",
  "tokio",
 ]
@@ -2524,27 +2544,47 @@ dependencies = [
 
 [[package]]
 name = "texcore"
-version = "0.6.0"
+version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8231cc7f17ae130c6fc309c778d30cbe40d617c9d0ec51abb762ccd6c6a8a084"
+checksum = "0dfff1fee244d22d4174657faf6447eedeff8dabf2d6c986bbb1ee6dc8ddee9b"
 dependencies = [
  "futures",
  "rayon",
  "serde",
  "serde_json",
  "tectonic",
+ "texcore_traits",
  "tokio",
 ]
 
 [[package]]
-name = "texcreate_repo"
-version = "0.1.2"
+name = "texcore_derive"
+version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2b1fa32a5eb262d414fdbbdc108bff1247fd45106ce27fbd7868d7c3ec1da428"
+checksum = "44d5d6335a8b08a93bca7a22cf95ffb866bec3bd37ddca6a24da3935152f42d8"
+dependencies = [
+ "quote",
+ "syn 1.0.109",
+]
+
+[[package]]
+name = "texcore_traits"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6ee92b335bd5072c638166fb7ee3ed75ec5cce63601e4da5ac9b78021a902799"
+dependencies = [
+ "texcore_derive",
+]
+
+[[package]]
+name = "texcreate_repo"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "321f34418396979b2b4d004d4148763b0ee66d5cd6379a460464d09493a6b54d"
 dependencies = [
  "reqwest",
  "serde",
- "texcore 0.6.0",
+ "texcore 0.7.1",
  "tokio",
  "toml 0.7.3",
 ]
@@ -3161,7 +3201,7 @@ version = "2.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0c4583db5cbd4c4c0303df2d15af80f0539db703fa1c68802d4cbbd2dd0f88f6"
 dependencies = [
- "dirs",
+ "dirs 4.0.0",
 ]
 
 [[package]]
