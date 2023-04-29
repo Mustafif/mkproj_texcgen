@@ -16,7 +16,9 @@ pub fn name() -> String {
 fn elements() -> Vec<Element<Any>> {
     // This macro converts all TexCore types that implement
     // the `Tex` trait to Element<Any>
-    Elements![]
+    // example element:
+    let ex_header = Header::new("hello", 1);
+    Elements![ex_header]
 }
 
 // where you may declare the version of the template

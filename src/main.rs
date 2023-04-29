@@ -5,6 +5,7 @@ mod template;
 
 use crate::builder::{generate, generate_all, get_templates, save, Builder};
 use std::path::PathBuf;
+use std::str::FromStr;
 use structopt::StructOpt;
 use texcore::template::Version;
 use texcreate_repo::release::Release;
@@ -65,7 +66,7 @@ async fn main() -> Result<()> {
             println!("Enter TexCreate Minimum Version: ");
             let mut input = String::new();
             std::io::stdin().read_line(&mut input)?;
-            let texc_version= str_to_version(input.trim());
+            let texc_version= Version::from_str(input.trim()).unwrap();
 
             let templates = get_templates().await;
             //println!("{:?}", &templates);
@@ -81,11 +82,4 @@ async fn main() -> Result<()> {
     }
 
     Ok(())
-}
-
-// temporary fix:
-// Next issue to put a builder config to automate release process.
-fn str_to_version(s: &str) -> Version{
-    let split: Vec<&str> = s.rsplit('.').collect();
-    Version::new(split[2].parse().unwrap(), split[1].parse().unwrap(), split[0].parse().unwrap())
 }

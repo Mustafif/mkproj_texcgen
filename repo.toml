@@ -8,8 +8,8 @@ patch = 0
 
 [info]
 basic = "A Basic LaTeX Document"
-code = "Code Documentation Focused"
 lachaise = "A perfect way to write assignments"
-theatre = "Create your own script for a play"
 news = "Write your own newspaper article"
+code = "Code Documentation Focused"
 dictionary = "Create your own dictionary!"
+theatre = "Create your own script for a play"

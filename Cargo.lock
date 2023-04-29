@@ -2542,7 +2542,7 @@ dependencies = [
  "dirs 5.0.0",
  "structopt",
  "texcgen-macro",
- "texcore 0.7.1",
+ "texcore 0.7.2",
  "texcore_traits",
  "texcreate_repo",
  "tokio",
@@ -2570,9 +2570,9 @@ dependencies = [
 
 [[package]]
 name = "texcore"
-version = "0.7.1"
+version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0dfff1fee244d22d4174657faf6447eedeff8dabf2d6c986bbb1ee6dc8ddee9b"
+checksum = "32911093cbdf3caf73aa59b456e960e80bee91c93f5634f0899bb05cca64a4a8"
 dependencies = [
  "futures",
  "rayon",
@@ -2610,7 +2610,7 @@ checksum = "f2e294fd33b89df89fb7e28d666473eefa1dfca9fc710a75d7f5be7a9c9476e9"
 dependencies = [
  "reqwest",
  "serde",
- "texcore 0.7.1",
+ "texcore 0.7.2",
  "tokio",
  "toml 0.7.3",
 ]
